@@ -47,15 +47,15 @@ while True:
      nextCardRank = nextCardDict['rank']
      nextCardSuit = nextCardDict['suit']
      nextCardValue = nextCardDict['value']
-    print('Next card is:', nextCardRank + ' of ' + nextCardSuit)
-    if answer == 'h':
+     print('Next card is:', nextCardRank + ' of ' + nextCardSuit)
+     if answer == 'h':
          if nextCardValue > currentCardValue:
           print('You got it right, it was higher')
           score = score + 20
          else:
           print('Sorry, it was not higher')
           score = score - 15
-    elif answer == 'l':
+     elif answer == 'l':
          if nextCardValue < currentCardValue:
           score = score + 20
           print('You got it right, it was lower')
